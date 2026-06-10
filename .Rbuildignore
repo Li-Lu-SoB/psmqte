@@ -1,0 +1,12 @@
+^\.gitignore$
+^cran-comments\.md$
+^tmp$
+^examples$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^inst/extdata/psmqte\.csv$
+^inst/extdata/psmqte\.dta$
+^inst/extdata/psmqte_dictionary\.csv$
+^\.positai$
+^\.claude$

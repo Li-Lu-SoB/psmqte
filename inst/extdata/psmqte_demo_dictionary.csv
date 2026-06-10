@@ -1,0 +1,12 @@
+variable,description
+id,Observation identifier
+Y,Observed outcome
+D,Binary treatment indicator
+X1,Continuous confounder affecting treatment and outcomes
+X2,Continuous confounder affecting treatment and heterogeneous effects
+X3,Additional continuous covariate
+age,Age-like covariate
+size,Positive size-like covariate
+Y0,Simulated untreated potential outcome
+Y1,Simulated treated potential outcome
+p_true,True treatment probability used in the simulation

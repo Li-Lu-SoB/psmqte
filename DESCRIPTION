@@ -1,0 +1,27 @@
+Package: psmqte
+Title: Propensity Score Matching for QTE, QTT, ATE, and ATT
+Version: 0.1.0
+Authors@R: c(
+    person("Li", "Lu", role = c("aut", "cre"),
+           email = "llu@geneseo.edu")
+  )
+Description: Implements propensity-score matching estimators for quantile
+    treatment effects (QTE), quantile treatment effects on the treated (QTT),
+    average treatment effects (ATE), and average treatment effects on the
+    treated (ATT). The package provides formula-based interfaces, nearest
+    neighbor matching with replacement, feasible influence-function standard
+    errors for QTE/QTT, matching diagnostics, and simulation helpers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends:
+    R (>= 4.1.0)
+Imports:
+    graphics,
+    stats,
+    utils
+Suggests:
+    causaldata,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
