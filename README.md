@@ -45,6 +45,10 @@ plot(fit, estimand = "qte")
 plot(fit, estimand = "qtt")
 ```
 
+The default plot method uses a monochrome, print-friendly style with serif text,
+distinct line types and point shapes for each value of `M`, and confidence
+intervals when they are available.
+
 Set `se = TRUE` to compute feasible influence-function standard errors and
 pointwise confidence intervals:
 

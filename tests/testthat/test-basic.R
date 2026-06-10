@@ -56,3 +56,19 @@ test_that("optional NHEFS example data loads when causaldata is installed", {
   expect_true(nrow(dat) > 1000)
   expect_true(all(c("Y", "D", "age", "sex", "race", "school") %in% names(dat)))
 })
+
+test_that("journal-style plot method runs", {
+  dat <- psmqte_example_data("simulated", n = 250, seed = 3)
+  fit <- psmqte(
+    Y ~ X1 + X2,
+    treatment = "D",
+    data = dat,
+    taus = c(0.25, 0.5, 0.75),
+    M = c(1, 2),
+    se = FALSE
+  )
+  grDevices::pdf(file = tempfile(fileext = ".pdf"))
+  on.exit(grDevices::dev.off(), add = TRUE)
+  expect_no_error(plot(fit, estimand = "qte"))
+  expect_no_error(plot(fit, estimand = "qtt", legend_position = "topright"))
+})
