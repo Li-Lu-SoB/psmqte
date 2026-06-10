@@ -1,6 +1,6 @@
 Package: psmqte
 Title: Propensity Score Matching for QTE, QTT, ATE, and ATT
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Li", "Lu", role = c("aut", "cre"),
            email = "llu@geneseo.edu")

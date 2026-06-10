@@ -1,3 +1,9 @@
+# psmqte 0.1.1
+
+- Improved `plot.psmqte()` with a monochrome, print-friendly economics-journal style.
+- Added confidence-interval plotting when standard errors are available.
+- Added documentation and tests for `plot.psmqte()`.
+
 # psmqte 0.1.0
 
 - Initial package skeleton.
